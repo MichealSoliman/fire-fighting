@@ -383,7 +383,7 @@ document.addEventListener('DOMContentLoaded', function() {
              title: 'التوريد والتركيب',
             subtitle: 'توفير وتركيب أحدث المعدات والأنظمة بكفاءة عالية',
             icon: 'fas fa-truck',
-            image: './img/project-8.jpg',
+            image: './img/Maintenance and installation.jpeg',
             services: [
                 'توريد معدات الإطفاء المعتمدة',
                 'تركيب أنظمة الإنذار المتطورة',
