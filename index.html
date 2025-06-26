@@ -188,63 +188,335 @@
 
 
     <!-- Hero Section -->
-    <section id="home" class="relative  min-h-screen  flex items-center justify-center gradient-bg hero-pattern "  style="background-image: url('./img/pexels-gene-samit-546626702-20632204.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center">
-        <!-- Background Overlay -->
-        <!-- <div class="absolute inset-0 bg-black/30  z-0"></div> -->
-      <div class="absolute inset-0 bg-black/50 backdrop-blur-md z-0"></div>      
-        <!-- Floating Elements -->
-        <div class="absolute top-20 right-10 w-20 h-20 bg-white/10 rounded-full animate-bounce-slow"></div>
-        <div class="absolute bottom-20 left-10 w-16 h-16 bg-white/10 rounded-full animate-pulse-slow"></div>
-        <div class="absolute top-1/2 left-20 w-12 h-12 bg-white/10 rounded-full animate-bounce-slow" style="animation-delay: 1s;"></div>
-        
-        <div class="relative z-10 container mx-auto px-4 lg:px-8 text-center text-white ">
-            <div class="max-w-4xl mx-auto pt-5">
-                <!-- Main Heading -->
-                <h1 class="text-4xl lg:text-6xl xl:text-7xl font-bold mb-6 animate-fade-in ">
-                    <span class="block ">حماية لا تضاهى</span>
-                    <span class="block text-blue-600">حلول متكاملة</span>
-                    <span class="block">لمكافحة الحرائق</span>
-                </h1>
-                
-                <!-- Subtitle -->
-                <p class="text-lg lg:text-xl xl:text-2xl mb-8 animate-slide-up opacity-90 leading-relaxed">
-                    نحن نقدم أحدث أنظمة مكافحة الحرائق والحلول الأمنية المتكاملة لحماية الأرواح والممتلكات في جميع أنحاء الرياض والمملكة العربية السعودية
-                </p>
-                
-                <!-- Location Badge -->
-                <div class="inline-flex items-center bg-white/20 backdrop-blur-md rounded-full px-6 py-3 mb-8 animate-slide-up" style="animation-delay: 0.3s;">
-                    <i class="fas fa-map-marker-alt text-fire-yellow ml-2"></i>
-                    <span class="font-semibold">الرياض، المملكة العربية السعودية</span>
-                </div>
-                
-                <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style="animation-delay: 0.6s;">
-                    <a href="tel:+0565265233" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition hover:scale-105 transition-all duration-300 shadow-xl">
-                        <i class="fas fa-phone ml-2"></i>
-                        احصل على استشارة مجانية
-                    </a>
-                     
-                    <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-600  transform hover:scale-105 transition-all duration-300">
-                        <i class="fas fa-shield-alt ml-2"></i>
-                        اكتشف خدماتنا
-                    </a>
-                </div>
-                
-           
-            </div>
-        </div>
-        
-        <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <a href="#about" class="text-white hover:text-fire-yellow transition-colors duration-300">
-                <i class="fas fa-chevron-down text-2xl"></i>
-            </a>
-        </div>
-    </section>
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+  <!-- ✅ صورة الخلفية الثابتة داخل السكشن -->
+  <div class="hero-background-fixed"></div>
+  
+  <!-- ✅ طبقة إضافية للتحكم في الشفافية -->
+  <div class="hero-overlay"></div>
+
+  <!-- ✅ عناصر ضبابية متحركة ثابتة داخل السكشن -->
+  <div class="hero-blur-1"></div>
+  <div class="hero-blur-2"></div>
+  <div class="hero-blur-3"></div>
+  <div class="hero-blur-4"></div>
+  <div class="hero-blur-5"></div>
+
+  <!-- ✅ المحتوى داخل الحاوية الأساسية -->
+  <div class="hero-content">
+    <div class="max-w-4xl mx-auto space-y-6">
+      <h1 class="text-4xl lg:text-6xl xl:text-7xl font-bold animate-fade-in leading-tight">
+        <span class="block text-white drop-shadow-2xl">حماية لا تضاهى</span>
+        <span class="block text-blue-500 drop-shadow-2xl">حلول متكاملة</span>
+        <span class="block text-white drop-shadow-2xl">لمكافحة الحرائق</span>
+      </h1>
+
+      <p class="text-lg lg:text-xl xl:text-2xl animate-slide-up text-white/95 leading-relaxed drop-shadow-lg">
+        نحن نقدم أحدث أنظمة مكافحة الحرائق والحلول الأمنية المتكاملة لحماية الأرواح والممتلكات في جميع أنحاء الرياض والمملكة العربية السعودية
+      </p>
+
+      <div class="inline-flex items-center bg-white/20 backdrop-blur-md rounded-full px-6 py-3 animate-slide-up border border-white/30">
+        <i class="fas fa-map-marker-alt text-yellow-400 ml-2"></i>
+        <span class="font-semibold text-white">الرياض، المملكة العربية السعودية</span>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
+        <a href="tel:+0565265233" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition hover:scale-105 duration-300 shadow-xl">
+          <i class="fas fa-phone ml-2"></i>
+          احصل على استشارة مجانية
+        </a>
+        <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-600 hover:border-blue-600 transform hover:scale-105 transition-all duration-300">
+          <i class="fas fa-shield-alt ml-2"></i>
+          اكتشف خدماتنا
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ سهم النزول -->
+  <div class="hero-scroll-arrow">
+    <a href="#about" class="text-white hover:text-yellow-400 transition-colors duration-300">
+      <i class="fas fa-chevron-down text-2xl drop-shadow-lg"></i>
+    </a>
+  </div>
+</section>
+
+<style>
+/* Hero Section - الحاوية الرئيسية */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* صورة الخلفية الثابتة */
+.hero-background-fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./img/pexels-gene-samit-546626702-20632204.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* طبقة الشفافية */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgb(0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(221, 3, 3, 0.4) 100%
+    );
+    z-index: 5;
+}
+
+/* العناصر الضبابية الثابتة */
+.hero-blur-1, .hero-blur-2, .hero-blur-3, .hero-blur-4, .hero-blur-5 {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 10;
+    transform: translateZ(0);
+}
+
+.hero-blur-1 {
+    top: 20%;
+    right: 10%;
+    width: 80px;
+    height: 80px;
+    animation: float-1 6s ease-in-out infinite;
+}
+
+.hero-blur-2 {
+    bottom: 20%;
+    left: 10%;
+    width: 64px;
+    height: 64px;
+    animation: float-2 8s ease-in-out infinite;
+}
+
+.hero-blur-3 {
+    top: 50%;
+    left: 15%;
+    width: 48px;
+    height: 48px;
+    animation: float-3 7s ease-in-out infinite;
+}
+
+.hero-blur-4 {
+    top: 30%;
+    right: 30%;
+    width: 96px;
+    height: 96px;
+    animation: float-4 9s ease-in-out infinite;
+}
+
+.hero-blur-5 {
+    bottom: 30%;
+    right: 15%;
+    width: 56px;
+    height: 56px;
+    animation: float-5 5s ease-in-out infinite;
+}
+
+/* المحتوى الرئيسي */
+.hero-content {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+/* سهم النزول */
+.hero-scroll-arrow {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    animation: bounce 2s infinite;
+}
+
+/* أنيميشن العناصر الضبابية */
+@keyframes float-1 {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.1;
+    }
+    50% { 
+        transform: translateY(-20px) rotate(180deg);
+        opacity: 0.3;
+    }
+}
+
+@keyframes float-2 {
+    0%, 100% { 
+        transform: translateX(0px) scale(1);
+        opacity: 0.15;
+    }
+    50% { 
+        transform: translateX(15px) scale(1.1);
+        opacity: 0.25;
+    }
+}
+
+@keyframes float-3 {
+    0%, 100% { 
+        transform: translateY(0px) translateX(0px);
+        opacity: 0.12;
+    }
+    50% { 
+        transform: translateY(-15px) translateX(10px);
+        opacity: 0.28;
+    }
+}
+
+@keyframes float-4 {
+    0%, 100% { 
+        transform: scale(1) rotate(0deg);
+        opacity: 0.08;
+    }
+    50% { 
+        transform: scale(1.05) rotate(90deg);
+        opacity: 0.2;
+    }
+}
+
+@keyframes float-5 {
+    0%, 100% { 
+        transform: translateY(0px) translateX(0px) rotate(0deg);
+        opacity: 0.14;
+    }
+    50% { 
+        transform: translateY(10px) translateX(-8px) rotate(-45deg);
+        opacity: 0.26;
+    }
+}
+
+/* أنيميشن المحتوى */
+@keyframes fade-in {
+    from { 
+        opacity: 0; 
+        transform: translateY(50px);
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-up {
+    from { 
+        opacity: 0; 
+        transform: translateY(80px);
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 1.2s ease-out;
+}
+
+.animate-slide-up {
+    animation: slide-up 1s ease-out 0.5s both;
+}
+
+/* تحسين الاستجابة للموبايل */
+@media (max-width: 768px) {
+    .hero-background-fixed {
+        background-attachment: scroll;
+    }
+    
+    .hero-content {
+        padding: 0 1rem;
+    }
+    
+    .hero-blur-1 { 
+        top: 15%; 
+        right: 5%; 
+        width: 60px; 
+        height: 60px; 
+    }
+    
+    .hero-blur-2 { 
+        bottom: 15%; 
+        left: 5%; 
+        width: 48px; 
+        height: 48px; 
+    }
+    
+    .hero-blur-3 { 
+        top: 45%; 
+        left: 8%; 
+        width: 36px; 
+        height: 36px; 
+    }
+    
+    .hero-blur-4 { 
+        top: 25%; 
+        right: 20%; 
+        width: 72px; 
+        height: 72px; 
+    }
+    
+    .hero-blur-5 { 
+        bottom: 25%; 
+        right: 8%; 
+        width: 42px; 
+        height: 42px; 
+    }
+}
+
+/* تحسين الأداء */
+.hero-section * {
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+</style>
+
 
     <!-- About Section -->
-    <section id="about" class="py-20 lg:py-32 bg-light-gray">
-        <div class="container mx-auto px-4 lg:px-8 mt-0">
+    <section id="about" class="py-20 lg:py-32 bg-light-gray mt-0">
+        <div class="container mx-auto px-4 lg:px-8 ">
             <div class="max-w-6xl mx-auto">
                 <!-- Section Header -->
                 <div class="text-center mb-16">
